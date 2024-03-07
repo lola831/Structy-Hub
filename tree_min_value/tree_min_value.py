@@ -6,7 +6,7 @@
 #     self.right = None
 ​
 def tree_min_value(root):
-  min = float('inf')
+  min = root.val
   stack = [root]
   while stack:
     curr = stack.pop()
