@@ -1,3 +1,4 @@
+
 # class Node:
 #   def __init__(self, val):
 #     self.val = val
@@ -27,6 +28,3 @@ def breadth_first_values(root):
   return values
 ​
 ​
-​
-​
-  
