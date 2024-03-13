@@ -1,4 +1,3 @@
-
 # class Node:
 #   def __init__(self, val):
 #     self.val = val
@@ -6,16 +5,11 @@
 #     self.right = None
 ​
 def tree_min_value(root):
-  min = root.val
-  stack = [root]
-  while stack:
-    curr = stack.pop()
-    if curr.val < min:
-      min = curr.val
-    if curr.left:
-      stack.append(curr.left)
-    if curr.right:
-      stack.append(curr.right)
-  return min
+  if root is None:
+    return float('inf')
   
-    if target == curr.val:
+  min_left = tree_min_value(root.left)
+  min_right = tree_min_value(root.right)
+  
+  return min(root.val, min_right, min_left)
+  
