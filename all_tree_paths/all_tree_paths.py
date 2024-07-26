@@ -7,7 +7,6 @@ class Node:
 
 def all_tree_paths(root):
   if root is None:
-    print("in None")
     return []
 
 
