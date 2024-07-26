@@ -24,7 +24,7 @@ def all_tree_paths(root):
   for sub_path in left_sub_path:
     print("sub_path: ", sub_path)
     paths.append([root.val, *sub_path])
-    print("path: ", paths)
+    
 
 
   right_sub_paths = all_tree_paths(root.right)
